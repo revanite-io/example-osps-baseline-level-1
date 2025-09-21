@@ -23,6 +23,11 @@ project:
   vulnerability-reporting:
     reports-accepted: true
     bug-bounty-available: false
+    contact:
+      name: Eddie Knight
+      affiliation: Sonatype
+      email: knight@linux.com
+      primary: true
 
 repository:
   url: https://github.com/revanite-io/example-osps-baseline-level-1
