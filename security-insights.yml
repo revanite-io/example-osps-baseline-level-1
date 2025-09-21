@@ -1,0 +1,76 @@
+header:
+  schema-version: 2.0.0
+  last-updated: '2025-09-21'
+  last-reviewed: '2025-09-21'
+  url: https://github.com/revanite-io/example-osps-baseline-level-1
+
+project:
+  name: "Example OSPS Baseline Level 1"
+  administrators:
+    - name: Eddie Knight
+      affiliation: Sonatype
+      email: knight@linux.com
+      primary: true
+  documentation:
+    detailed-guide: https://github.com/revanite-io/example-osps-baseline-level-1/blob/main/README.md
+    quickstart-guide: https://github.com/revanite-io/example-osps-baseline-level-1/blob/main/README.md
+    code-of-conduct: https://github.com/revanite-io/example-osps-baseline-level-1/blob/main/README.md
+  repositories:
+    - name: example-osps-baseline-level-1
+      url: https://github.com/revanite-io/example-osps-baseline-level-1
+      comment: |
+        The repository
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
+
+repository:
+  url: https://github.com/revanite-io/example-osps-baseline-level-1
+  status: active
+  accepts-change-request: true
+  accepts-automated-change-request: false
+  core-team:
+    - name: Eddie Knight
+      affiliation: Sonatype
+      email: knight@linux.com
+      primary: true
+    - name: Jason Meridth
+      affiliation: GitHub
+      email: jmeridth@gmail.com
+      primary: false
+    - name: Travis Truman
+      affiliation: Independent
+      email: trumant@gmail.com
+      primary: false
+    - name: Alex Speasmaker
+      affiliation: USAA
+      email: alex.speasmaker@gmail.com
+      primary: false
+  documentation:
+    contributing-guide: https://github.com/revanite-io/example-osps-baseline-level-1?tab=contributing-ov-file
+  license:
+    url: https://github.com/revanite-io/example-osps-baseline-level-1?tab=MIT-1-ov-file
+    expression: MIT
+  security:
+    assessments:
+      self:
+        comment: |
+          Self assessment has not yet been completed.
+    tools:
+      - name: Dependabot
+        type: SCA
+        version: "2"
+        rulesets:
+          - built-in
+        results:
+          adhoc:
+            name: Scheduled SCA Scan Results
+            predicate-uri: https://docs.github.com/en/graphql/reference/objects#repositoryvulnerabilityalert
+            location: https://github.com/revanite-io/example-osps-baseline-level-1/security/dependabot
+            comment: |
+              The results of the scheduled SCA scan are available in the Dependabot tab of the Security Insights page.
+        integration:
+          adhoc: true
+          ci: false
+          release: false
+      
